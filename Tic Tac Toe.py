@@ -86,14 +86,10 @@ def win_check(board,choice):
     (board[9] == choice and board[5] == choice and board[1] == choice)) # diagonal
 
 
-# In[8]:
-
 
 def space_check(board,position):
     return board[position]==''
 
-
-# In[9]:
 
 
 def full_board_check(board):
@@ -101,9 +97,6 @@ def full_board_check(board):
         if space_check(board,i):
             return True
     return False
-
-
-# In[10]:
 
 
 import random
@@ -115,15 +108,9 @@ def choose_first():
         return 'Player 1'
 
 
-# In[11]:
-
-
 def replay():
     play= input("Do u wnat to play another game......Enter Yes or No: ")
     return play== 'Yes'
-
-
-# In[12]:
 
 
 print("Welcome to Tic Tac Toe")
@@ -182,46 +169,6 @@ while True:
     
     if not replay():
         break
-
-
-# In[13]:
-
-
-print(type(board[3]))
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
 
 
 
